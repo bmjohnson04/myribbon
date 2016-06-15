@@ -24,11 +24,14 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post =current_user.posts.new(post_params)
+    @post = Post.new(post_params) do |post|
+      post.user = current_user
+    end
     if @post.save
       redirect_to root_path
     else
       redirect_to root_path, notice: @post.errors.full_messages.first
+    end
   end
 
   # PATCH/PUT /posts/1
