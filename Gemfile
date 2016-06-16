@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'letter_opener'
+
 #for developement email confirmations
+gem 'letter_opener'
+# Use t handle user authentication
 gem 'devise'
+# gem provides a simple and extremely fkexiable way to upload files
+gem 'carrierwave'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
