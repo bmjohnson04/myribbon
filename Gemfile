@@ -26,6 +26,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+# Used to implement at.js for auto complete mentions/emojis
+gem 'jquery-atwho-rails'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -44,10 +46,36 @@ gem 'public_activity'
 #will_paginate is a pagination library that integrates with Ruby on Rails, Sinatra, Merb, DataMapper and Sequel. Installation:
 gem 'will_paginate'
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'guard'
+  gem 'guard-rspec', '~> 4.2.8'
+end
+
+
+group :development, :test do
+
+end
+
+group :production do
+  gem 'pg'
+  gem 'unicorn'
+  gem 'cloudinary'
+  gem 'rails_12factor'
+end
+
 gem 'acts_as_votable'
 gem 'acts_as_commentable'
 gem 'acts_as_follower'
 gem 'counter_culture'
+
+gem 'friendly_id'
+
+gem 'faker'
+gem 'populator'
+gem 'auto_html'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
