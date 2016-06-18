@@ -16,8 +16,8 @@ class User < ActiveRecord::Base
 
   validates_presence_of :name
 
-  self.per_page = 10
+  # self.per_page = 10
 
-  extend FriendlyId
-  friendly_id :name, use: [:slugged, :finders]
+  # extend FriendlyId
+  # friendly_id :name, use: [:slugged, :finders]
 end

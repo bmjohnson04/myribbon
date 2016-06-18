@@ -38,6 +38,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# gem provides easy activity tracking for your ActiveRecord
+gem 'public_activity'
+
+#will_paginate is a pagination library that integrates with Ruby on Rails, Sinatra, Merb, DataMapper and Sequel. Installation:
+gem 'will_paginate'
 
 gem 'acts_as_votable'
 gem 'acts_as_commentable'
