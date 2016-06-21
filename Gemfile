@@ -46,6 +46,11 @@ gem 'public_activity'
 #will_paginate is a pagination library that integrates with Ruby on Rails, Sinatra, Merb, DataMapper and Sequel. Installation:
 gem 'will_paginate'
 
+# Use twitter bootstrap sass
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+gem 'font-awesome-rails'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -74,7 +79,7 @@ gem 'friendly_id'
 
 gem 'faker'
 gem 'populator'
-gem 'auto_html'
+gem 'auto_html', '~> 1.6.4'
 
 
 group :development, :test do
