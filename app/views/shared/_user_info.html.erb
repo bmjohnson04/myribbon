@@ -5,7 +5,7 @@
   </div>
   <h5>
     <%= fa_icon 'shield' %>
-    <%= pluralize(@user.posts_count, 'post') %>
+    <%= pluralize(@user.posts.count, 'post') %>
   </h5>
   <% if @user.dob.present? %>
     <h5>
