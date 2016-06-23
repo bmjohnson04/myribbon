@@ -1,5 +1,5 @@
 class AddCommentsCountToPosts < ActiveRecord::Migration
   def change
-    add_column :posts, :comments_count, :string
+    add_index :posts, :comments_count
   end
 end
