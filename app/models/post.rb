@@ -1,4 +1,4 @@
-# Socify is an Open source Social network written in Ruby on Rails This file is licensed
+# Ribbons is an Open source Social network written in Ruby on Rails This file is licensed
 # under GNU GPL v2 or later. See the LICENSE.
 # Step by Step buils credit to @sudharti(Sudharsanan Muralidharan
 
