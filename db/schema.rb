@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160621225229) do
+ActiveRecord::Schema.define(version: 20160623030321) do
 
   create_table "activities", force: :cascade do |t|
     t.integer  "trackable_id"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160621225229) do
     t.string   "role",                        default: "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "comment_html"
   end
 
   add_index "comments", ["commentable_id"], name: "index_comments_on_commentable_id"
