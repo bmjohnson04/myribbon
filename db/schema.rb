@@ -80,13 +80,12 @@ ActiveRecord::Schema.define(version: 20160623212239) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.string   "cached_votes_up"
-    t.string   "comments_count"
     t.text     "content_html"
   end
 
   add_index "posts", ["cached_votes_up"], name: "index_posts_on_cached_votes_up"
-  add_index "posts", ["comments_count"], name: "index_posts_on_comments_count"
   add_index "posts", ["user_id"], name: "index_posts_on_user_id"
+  add_index "posts", [nil], name: "index_posts_on_comments_count"
 
   create_table "users", force: :cascade do |t|
     t.string   "name",                   default: "",     null: false
@@ -111,7 +110,6 @@ ActiveRecord::Schema.define(version: 20160623212239) do
     t.string   "slug"
     t.date     "dob"
     t.string   "location"
-    t.string   "phone_number"
     t.string   "sex",                    default: "male", null: false
     t.integer  "posts_count",            default: 0,      null: false
   end
